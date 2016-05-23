@@ -1,17 +1,25 @@
 # Prevent all requests using the jQuery library (no-jquery)
 
-Please describe the origin of the rule here.
-
-
 ## Rule Details
 
-This rule aims to...
+This rule aims to promote cleaner code by relying less on third party libraries. Prefer native fetch API over jQuery ajax calls.
 
 The following patterns are considered warnings:
 
 ```js
 
-// fill me in
+$('#foo').load('/bar')
+jQuery('#foo').load('/bar')
+$.ajax('/foo')
+jQuery.ajax('/foo')
+$.get('/foo')
+jQuery.get('/foo')
+$.getJSON('/foo')
+jQuery.getJSON('/foo')
+$.getScript('/foo')
+jQuery.getScript('/foo')
+$.post('/foo')
+jQuery.post('/foo')
 
 ```
 
@@ -19,18 +27,6 @@ The following patterns are not warnings:
 
 ```js
 
-// fill me in
+fetch('/foo')
 
 ```
-
-### Options
-
-If there are any options, describe them here. Otherwise, delete this section.
-
-## When Not To Use It
-
-Give a short description of when it would be appropriate to turn off this rule.
-
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.

@@ -1,7 +1,7 @@
 ESLint-Plugin-Fetch
 ===================
 
-Prefer fetch over other ajax requests
+Prefer [fetch](https://github.com/github/fetch) over other ajax requests
 
 # Installation
 
