@@ -17,7 +17,8 @@
   "author": "Jeff Dolle",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm run lint && node_modules/mocha/bin/_mocha tests --recursive --compilers js:babel-core/register --reporter dot",
+    "test": "npm run lint && ./node_modules/mocha/bin/_mocha tests --recursive --compilers js:babel-core/register --reporter dot",
+    "travis-test": "node_modules/.bin/babel-node node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha -- -R spec tests/**/*",
     "lint": "eslint ./",
     "prepublish": "babel src/lib -d lib"
   },
@@ -26,7 +27,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
+    "babel-istanbul": "^0.8.0",
     "babel-preset-es2015": "^6.9.0",
+    "coveralls": "^2.11.9",
     "eslint": "^2.9.0",
     "eslint-plugin-babel": "^3.2.0",
     "mocha": "^2.4.5"
