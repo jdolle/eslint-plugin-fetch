@@ -1,8 +1,6 @@
 ESLint-Plugin-Fetch
 ===================
 
-[![Maintenance Status][status-image]][status-url] [![NPM version][npm-image]][npm-url] [![Dependencies][deps-image]][deps-url]
-
 Prefer fetch over other ajax requests
 
 # Installation
