@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fetch",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Prefer fetch over other ajax requests",
   "keywords": [
     "eslint",
