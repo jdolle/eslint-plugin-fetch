@@ -1,0 +1,38 @@
+{
+  "name": "eslint-plugin-fetch",
+  "version": "0.0.0",
+  "description": "Prefer fetch over other ajax requests",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "ajax",
+    "fetch",
+    "xhr"
+  ],
+  "files": [
+    "README.md",
+    "lib"
+  ],
+  "author": "Jeff Dolle",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run lint && node_modules/mocha/bin/_mocha tests --recursive --compilers js:babel-core/register --reporter dot",
+    "lint": "eslint ./",
+    "prepublish": "babel src/lib -d lib"
+  },
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^2.9.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "mocha": "^2.4.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT"
+}
