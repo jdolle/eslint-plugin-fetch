@@ -37,6 +37,6 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "repository": "git:jdolle/eslint-plugin-fetch",
+  "repository": "https://github.com/jdolle/eslint-plugin-fetch",
   "license": "MIT"
 }
