@@ -1,6 +1,9 @@
 ESLint-Plugin-Fetch
 ===================
 
+[![Build Status](https://travis-ci.org/jdolle/eslint-plugin-fetch.svg?branch=master)](https://travis-ci.org/jdolle/eslint-plugin-fetch)
+[![Coverage Status](https://coveralls.io/repos/github/jdolle/eslint-plugin-fetch/badge.svg?branch=master)](https://coveralls.io/github/jdolle/eslint-plugin-fetch?branch=master)
+
 Prefer [fetch](https://github.com/github/fetch) over other ajax requests
 
 # Installation
