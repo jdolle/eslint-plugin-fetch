@@ -18,7 +18,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run lint && ./node_modules/mocha/bin/_mocha tests --recursive --compilers js:babel-core/register --reporter dot",
-    "travis-test": "node_modules/.bin/babel-node node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha -- -R spec tests/**/*",
+    "test-travis": "node_modules/.bin/babel-node node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha -- -R spec tests/**/*",
     "lint": "eslint ./",
     "prepublish": "babel src/lib -d lib"
   },
